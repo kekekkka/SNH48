@@ -10,8 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"></script>
-   
-   
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js"></script>
+
+
     <style type="text/css">
         .icon {
             width: 1em;
@@ -26,7 +27,7 @@
 <body>
 
 
-  
+
     <div id="sitewelcome" class="sitewelcome active">
         <div class="loading"></div>
     </div>
@@ -81,10 +82,10 @@
                 </div>
             </div>
             <script>
-                function myFunction(){
+                function myFunction() {
                     alert("想屁吃，我怎么能搞得到");
                 }
-                </script>
+            </script>
             <footer class="media">
                 <a href="#" onclick="myFunction()"><svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-qq"></use>
@@ -174,13 +175,22 @@
                 <img src="./img/4.jpg" class="swiper-slide">
                 <img src="./img/5.jpg" class="swiper-slide">
                 <img src="./img/6.jpg" class="swiper-slide">
-            </div>         
+            </div>
             <div class="swiper-pagination"></div>
         </div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> 
+        <div class="swiper-button-next"></div>
     </section>
-   
+    <section>
+        <h2>留言板</h2>
+        <ol id="messageList" ></ol>
+        <form id="postMessage" style="width: 700px; margin: 50px auto;">
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+
+    </section>
+
     <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/message.js"></script>
