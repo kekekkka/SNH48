@@ -2,17 +2,17 @@
 <html>
 <link rel="stylesheet" href="loading.css">
 <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"> 
 
 <head>
     <title>王奕耶</title>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
     <script src=" https://at.alicdn.com/t/c/font_4029905_u5ljfsv5ar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js"></script>
-
-
     <style type="text/css">
         .icon {
             width: 1em;
@@ -165,27 +165,32 @@
             </li>
         </ul>
     </section>
+   
     <section data-x class="portfolio" id="siteworks">
         <h2 style="margin-bottom: 30px;">作品合集</h2>
         <div class="swiper">
-            <div class="swiper-wrapper">
-                <img src="./img/1.jpg" class="swiper-slide">
-                <img src="./img/2.jpg" class="swiper-slide">
-                <img src="./img/3.jpg" class="swiper-slide">
-                <img src="./img/4.jpg" class="swiper-slide">
-                <img src="./img/5.jpg" class="swiper-slide">
-                <img src="./img/6.jpg" class="swiper-slide">
-            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> <img src="./img/1.jpg" ></div>
+                  <div class="swiper-slide"><img src="./img/2.jpg"></div>
+                  <div class="swiper-slide"> <img src="./img/3.jpg" ></div>
+                  <div class="swiper-slide"><img src="./img/4.jpg"></div>
+                  <div class="swiper-slide"> <img src="./img/5.jpg" ></div>
+                  <div class="swiper-slide"><img src="./img/6.jpg"></div>
+                </div>
+              </div>
+           
             <div class="swiper-pagination"></div>
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </section>
-    <section>
+    <section class="message" >
         <h2>留言板</h2>
         <ol id="messageList" ></ol>
         <form id="postMessage" style="width: 700px; margin: 50px auto;">
-            <input type="text" name="content">
+           昵称 <input type="text" name="name">
+            内容<input type="text" name="content">
             <input type="submit" value="提交">
         </form>
 

@@ -405,3 +405,18 @@ section.portfolio>nav>ul>li:nth-child(1) {
     height: 500px;
     background: white;
 }
+.message{
+    max-width: 700px;
+    margin: 10px auto;
+}
+.message>h2{
+    text-align:center;
+}
+#messageList>ol{
+   
+    border-top: 1px solid #ddd;
+}
+#messageList>li{
+   padding: 16px;
+   border-bottom: 1px solid #ddd;
+}
